@@ -1,9 +1,124 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Start Commit</title>
-    </head>
-    <body>
-        Start commit body
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computing for Good - Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome for some additonal Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-laptop-code me-2"></i>Computing for Good
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="healthcare.html">Healthcare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="environment.html">Environment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Applications Preview Section -->
+        <section id="applications" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Areas of Impact</h2>
+                <div class="row g-4">
+                    <!-- Healthcare Card -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-heartbeat me-2"></i>Healthcare</h5>
+                                <p class="card-text">Discover how AI, data analysis, and mobile apps are revolutionizing patient care, diagnostics, and medical research.</p>
+                                <a href="healthcare.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education Card -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-graduation-cap me-2"></i>Education</h5>
+                                <p class="card-text">See how e-learning platforms, virtual reality, and personalized software are making education more accessible and effective.</p>
+                                <a href="education.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Environment Card -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-leaf me-2"></i>Environment</h5>
+                                <p class="card-text">Learn about the tech used for climate modeling, conservation efforts, and creating a more sustainable future.</p>
+                                <a href="environment.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Author Details Section -->
+        <section class="author-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Page Author</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h3>Sam Baston</h3>
+                        <p class="author">This page was authored by Sam Baston</p>
+                        
+                        <p class="text-muted"><em>Bio </em></p>
+
+                        <div>
+                            <a href="https://github.com" target="_blank" class="btn btn-dark me-2">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>2025 Collaboration Lab</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
