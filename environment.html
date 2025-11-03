@@ -10,6 +10,81 @@
 
     <!-- Font Awesome for some additonal Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+                .author-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .author-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .author-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .author-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 1px;
+            background-color: #dee2e6;
+        }
+
+        .author-name {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #495057;
+            margin-bottom: 20px;
+        }
+
+        .author-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .author-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 14px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            color: #6c757d;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .author-link:hover {
+            background-color: #fff;
+            color: #495057;
+            border-color: #adb5bd;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -28,13 +103,13 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="healthcare.html">Healthcare</a>
+                        <a class="nav-link" href="healthcare.html">Healthcare</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="education.html">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="environment.html">Environment</a>
+                        <a class="nav-link active" href="environment.html">Environment</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -47,11 +122,12 @@
     <!-- Main Content -->
     <main>
         <!-- Applications Preview Section -->
-        <section id="applications" class="py-5">
+        <header class="hero-section">
             <div class="container">
-                <h2 class="text-center mb-4">How Computing Has Helped The Environment</h2>
+                <h1 class="display-4">Transforming The Environment with Technology</h1>
+                <p class="lead">Lorem Ipsum</p>
             </div>
-        </section>
+        </header>
 
         <section id="content" class="py-5">
             <div class="container">
@@ -59,7 +135,7 @@
                     <div class="col-lg-9">
                         <h3 class="text-center mb-4">Climate Modelling and Prediction</h3>
                         <p class="text-center mb-4">
-                            Computing has revolutionized the field of prosthetics by enabling the design and manufacturing of more functional, customized, and intuitive limbs. Computer-aided technologies improve every stage of development, from better design and fit to more natural control and sensory feedback.
+                            Lorem Ipsum
                         </p>
                     </div>
                     <div class="col-lg-3">
@@ -67,39 +143,20 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-9">
-                        <h3 class="text-center mb-4">Disease Identification and Tracking</h3>
-                        <p class="text-center mb-4">
-                            Recent improvements in computing have allowed the diagnosis side of healthcare to rapidly improve, increasing the overall accuracy of healthcare, and thus improving the likelihood of a successful treatment plan. It has also allowed us to track diseases more effectively, as seen with the COVID-19 pandemic, where Canadian company BlueDot managed to correctly predict 'hotspots' of the virus, using an AI-led approach, analysing frequent travel routes and scouting internet chatrooms for individuals discussing symptoms consistent with the COVID-19 virus.
-                        </p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img src="https://s3.eu-north-1.amazonaws.com/cdn-site.mediaplanet.com/app/uploads/sites/42/2024/05/07143025/AdobeStock_734950261-888x500.jpg" style="width:100%" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-            </div>
         </section>
         <!-- Page Author Details Section -->
-        <section class="author-section py-5">
+        <section class="author-section">
             <div class="container">
-                <h2 class="text-center mb-4">Page Author</h2>
-                <div class="row align-items-center">
-                    <div class="col-md-8">
-                        <h3>Toby Lister</h3>
-                        <p class="author">This page was authored by Toby Lister</p>
-                        
-                        <p class="text-muted"><em>Bio </em></p>
-
-                        <div>
-                            <a href="https://github.com/tlister8" target="_blank" class="btn btn-dark me-2">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="https://linkedin.com/in/tobylister" target="_blank" class="btn btn-primary">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </a>
-                        </div>
+                <div class="author-container">
+                    <h2 class="author-title">Page Author</h2>
+                    <p class="author-name">Toby Lister</p>
+                    <div class="author-links">
+                        <a href="https://github.com/tlister8" target="_blank" class="author-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/tobylister" target="_blank" class="author-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
                     </div>
                 </div>
             </div>
