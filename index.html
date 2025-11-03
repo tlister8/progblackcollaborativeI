@@ -10,6 +10,81 @@
 
     <!-- Font Awesome for some additonal Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .author-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .author-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .author-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .author-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 1px;
+            background-color: #dee2e6;
+        }
+
+        .author-name {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #495057;
+            margin-bottom: 20px;
+        }
+
+        .author-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .author-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 14px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            color: #6c757d;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .author-link:hover {
+            background-color: #fff;
+            color: #495057;
+            border-color: #adb5bd;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -46,6 +121,14 @@
 
     <!-- Main Content -->
     <main>
+        <!-- Header Section -->
+         <header class="hero-section">
+            <div class="container">
+                <h1 class="display-4">Computing's Positive Impact on Society</h1>
+                <p class="lead">Improving the world through technology</p>
+            </div>
+        </header>
+
         <!-- Applications Preview Section -->
         <section id="applications" class="py-5">
             <div class="container">
@@ -86,29 +169,22 @@
         </section>
 
         <!-- Page Author Details Section -->
-        <section class="author-section py-5">
+        <section class="author-section">
             <div class="container">
-                <h2 class="text-center mb-4">Page Author</h2>
-                <div class="row align-items-center">
-                    <div class="col-md-8">
-                        <h3>Sam Baston</h3>
-                        <p class="author">This page was authored by Sam Baston</p>
-                        
-                        <p class="text-muted"><em>Bio </em></p>
-
-                        <div>
-                            <a href="https://github.com" target="_blank" class="btn btn-dark me-2">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" class="btn btn-primary">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </a>
-                        </div>
+                <div class="author-container">
+                    <h2 class="author-title">Page Author</h2>
+                    <p class="author-name">Sam Baston</p>
+                    <div class="author-links">
+                        <a href="https://github.com/SamBaston" target="_blank" class="author-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/samuel-baston" target="_blank" class="author-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
